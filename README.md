@@ -20,27 +20,7 @@ Principais melhorias:
 
 ---
 
-## 📒 2. Histórias de Usuário Implementadas
-
-Funcionalidades voltadas para **Atendentes** e **Gerentes da Locadora**:
-
-| ID       | Persona   | Eu quero...                     | Para que eu possa...             |
-| -------- | --------- | ------------------------------- | -------------------------------- |
-| **HU01** | Atendente | Adicionar um novo cliente.      | Cadastrar novos locatários.      |
-| **HU02** | Atendente | Editar dados de um cliente.     | Manter informações atualizadas.  |
-| **HU03** | Atendente | Excluir um cliente.             | Remover inativos sem pendências. |
-| **HU04** | Gerente   | Adicionar novo veículo.         | Expandir a frota.                |
-| **HU05** | Gerente   | Editar veículo.                 | Ajustar preços e detalhes.       |
-| **HU06** | Gerente   | Excluir veículo.                | Remover carros fora de operação. |
-| **HU07** | Atendente | Criar nova reserva.             | Registrar locação.               |
-| **HU08** | Atendente | Editar reserva existente.       | Corrigir ou ajustar locações.    |
-| **HU09** | Atendente | Excluir reserva.                | Cancelar locação.                |
-| **HU10** | Atendente | Buscar veículos disponíveis.    | Oferecer opções de carro.        |
-| **HU11** | Gerente   | Gerar relatório de faturamento. | Analisar desempenho financeiro.  |
-
----
-
-## 🛠️ 3. Arquitetura e Melhorias Técnicas
+## 🛠️ 2. Arquitetura e Melhorias Técnicas
 
 | Categoria        | Projeto Java               | Projeto Python + API               | Vantagens                             |
 | ---------------- | -------------------------- | ---------------------------------- | ------------------------------------- |
@@ -52,7 +32,7 @@ Funcionalidades voltadas para **Atendentes** e **Gerentes da Locadora**:
 
 ---
 
-## 🔧 4. Tecnologias Utilizadas
+## 🔧 3. Tecnologias Utilizadas
 
 * **Backend:**
 
@@ -81,7 +61,7 @@ Funcionalidades voltadas para **Atendentes** e **Gerentes da Locadora**:
 
 ---
 
-## 🗂️ 5. Estrutura do Projeto
+## 🗂️ 4. Estrutura do Projeto
 
 ```plaintext
 .
@@ -135,11 +115,11 @@ Funcionalidades voltadas para **Atendentes** e **Gerentes da Locadora**:
 
 ---
 
-## 🔄 6. Como Executar o Projeto
+## 🔄 5. Como Executar o Projeto
 
 **Pré-requisitos:** Docker e Docker Compose instalados na sua máquina.
 
-### 🔋 6.1 Iniciar a Aplicação
+### 🔋 5.1 Iniciar a Aplicação
 
 Para iniciar a aplicação web e o banco de dados, execute o seguinte comando na raiz do projeto. Este comando também irá reconstruir as imagens se necessário.
 
@@ -150,7 +130,7 @@ docker-compose up --build
 Após a inicialização, a interface web estará acessível em http://localhost:8000 e a documentação interativa da API (Swagger UI) em http://localhost:8000/docs.
 
 
-### 📝 6.2 Rodar Testes Automatizados
+### 📝 5.2 Rodar Testes Automatizados
 
 Para executar a suíte de testes completa, que valida todos os endpoints, abra um novo terminal (deixe a aplicação rodando no primeiro) e execute:
 
@@ -161,7 +141,7 @@ docker-compose run --rm tests
 Este comando inicia um container temporário que executa o pytest, valida todos os módulos e é removido ao final, garantindo um ambiente de teste limpo.
 
 
-### 📚 6.3 Análise de Código (Pylint)
+### 📚 5.3 Análise de Código (Pylint)
 
 Para verificar a qualidade e o estilo do código em relação às boas práticas do Python, execute:
 
