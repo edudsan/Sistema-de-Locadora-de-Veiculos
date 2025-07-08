@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const API_URL = 'http://localhost:8000';
 
-    // As variáveis globais são declaradas aqui.
     let navLinks, contentSections, modals, forms;
 
-    // --- Funções Auxiliares ---
     function showNotification(message, type = 'success') {
         alert(message);
     }
@@ -15,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return table;
     }
 
-    // --- Funções de Renderização ---
     const renderers = {
         clientes: (data, container) => {
             container.innerHTML = '';
