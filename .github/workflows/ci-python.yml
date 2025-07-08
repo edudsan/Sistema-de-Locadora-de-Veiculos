@@ -14,6 +14,7 @@ jobs:
     - name: Checkout do código
       uses: actions/checkout@v4
 
+
     - name: Configurar o Python 3.10
       uses: actions/setup-python@v4
       with:
@@ -37,3 +38,10 @@ jobs:
     - name: Testar com pytest
       run: |
         pytest
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install selenium  # Add this if not already in requirements.txt  
