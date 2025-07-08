@@ -6,6 +6,12 @@ Este projeto é uma **API RESTful robusta** para a gestão completa de uma locad
 
 Permite o gerenciamento de **clientes** (pessoas físicas e jurídicas), **frota de veículos** e **reservas**, com funcionalidades como busca de veículos disponíveis e relatórios de faturamento.
 
+Para acompanhar o andamento das atividades do projeto **Sistema de Gestão de Locadora de Veículos**, o quadro Kanban foi configurado no **Trello**.
+
+Você pode acessar o Kanban e acompanhar as tarefas do projeto através do seguinte [link para o Kanban no Trello](https://trello.com/invite/b/686d7b801b1717d639cdf73a/ATTI0e537f72d7f7bcf00045a38796dfefed24A3213C/sistema-locadora).
+
+O uso do Kanban auxilia na visualização do progresso, identificação de bloqueios e priorização de tarefas, além de promover uma melhor organização das sprints e entregas do projeto.
+
 ### 🔄 1.1 Evolução do Projeto
 
 Refatoração completa de um projeto **Java** orientado a objetos para uma arquitetura **moderna e desacoplada**.
@@ -150,4 +156,122 @@ docker-compose run --rm lint
 ```
 ---
 
-> Projeto desenvolvido por Eduardo Santos
+
+## 🧪 6. Testes Automatizados com Pytest 
+
+Este repositório contém testes automatizados utilizando o framework `pytest`. Siga os passos abaixo para configurar o ambiente e executar os testes sem problemas.
+
+---
+
+## 🛠 6.1 Pré-requisitos
+
+Antes de iniciar, verifique se você possui o Python 3.8 ou superior instalado em sua máquina. Você pode verificar a versão do Python com o comando:
+
+```bash
+python --version
+```
+
+---
+
+### 🚀 6.2 Passo a Passo para Executar os Testes
+
+#### 6.2.1 Crie um Ambiente Virtual
+
+Para garantir que as dependências não afetem outras aplicações na sua máquina, crie um ambiente virtual exclusivo para os testes:
+
+```bash
+python -m venv venv_testes
+```
+
+#### 6.2.2 Ative o Ambiente Virtual
+
+- **No Windows**:
+
+```bash
+.\venv_testes\Scripts\activate
+```
+
+- **No Linux ou MacOS**:
+
+```bash
+source venv_testes/bin/activate
+```
+
+> 🔑 **Importante:** Todos os comandos a seguir devem ser executados com o ambiente virtual ativado.
+
+---
+
+#### 6.2.3 Instale as Dependências Necessárias
+
+As dependências dos testes estão listadas no arquivo `requirements-test.txt`. Instale todas elas com o comando:
+
+```bash
+pip install -r requirements-test.txt
+```
+
+---
+
+#### 6.2.4 Atualize o Gerenciador de Pacotes (pip)
+
+Para garantir que você está usando a versão mais recente do `pip`, execute:
+
+```bash
+python.exe -m pip install --upgrade pip
+```
+
+---
+
+#### 6.2.5 Execute os Testes Automatizados
+
+Com todas as dependências instaladas e o ambiente configurado, execute os testes com o comando abaixo:
+
+```bash
+pytest tests_e2e/
+```
+
+---
+
+### 💡 6.3 Dicas Úteis
+
+- Para ver um relatório mais detalhado dos testes, adicione a flag `-v`:
+  
+```bash
+pytest -v tests_e2e/
+```
+
+- Para gerar um relatório em HTML (caso o plugin esteja no `requirements-test.txt`):
+
+```bash
+pytest --html=report.html tests_e2e/
+```
+
+---
+
+### 🧹 6.4 Desativando o Ambiente Virtual
+
+Após rodar os testes, você pode desativar o ambiente virtual com:
+
+```bash
+deactivate
+```
+
+## 🛠 7. Convenções de Código
+
+- **Estilo**: [PEP 8](https://peps.python.org/pep-0008/)
+- **Commits**: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- **Branching**: `main` como principal, sem ramificações adicionais.
+
+---
+
+## Referências Técnicas
+
+- [FastAPI Docs](https://fastapi.tiangolo.com/)
+- [PostgreSQL](https://www.postgresql.org/docs/current/)
+- [pytest](https://docs.pytest.org/en/stable/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+| Autor        | Matrícula | Disciplina                                                           | Período |
+|--------------|-----------|----------------------------------------------------------------------|---------|
+| Eduardo Schuindt Santos | 202042927| Técnicas de Programação em Plataformas Emergentes (FGA0242) – UnB/FCTE | 2025/1  |
+
+---
