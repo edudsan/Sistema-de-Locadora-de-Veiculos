@@ -10,7 +10,6 @@ def unique_suffix():
 
 class TestClientes:
     def test_ciclo_de_vida_cliente_pf(self):
-        # Gera dados únicos para esta execução de teste
         suffix = unique_suffix()
         email = f"jose.pf.{suffix}@teste.com"
         cpf = f"111.222.333-{suffix[:2]}"
