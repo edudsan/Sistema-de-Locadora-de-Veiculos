@@ -5,3 +5,4 @@
 .gitignore
 .venv/
 venv/
+tests_e2e
