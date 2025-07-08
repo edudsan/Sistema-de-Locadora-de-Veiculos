@@ -37,11 +37,12 @@ jobs:
 
     - name: Testar com pytest
       run: |
-        pytest
+        PYTHONPATH=. pytest
+
     - name: Set PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        pip install selenium  # Add this if not already in requirements.txt  
+        pip install selenium    
